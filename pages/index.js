@@ -1,9 +1,13 @@
 import styles from '../styles/Home.module.css';
+import data from '../data/books.json';
+import Books from '../components/Books';
 
 const Home = () => {
   return (
     <>     
-        <h1 className={styles.container}>Hello World</h1>
+      <div className='container mx-auto'>
+        <Books data={data} />
+      </div>
     </>
   );
 }

@@ -1,7 +1,8 @@
+
 const Header = () => {
   return (
-    <>     
-        <h1>The name of applications</h1>
+    <>
+        <h1>NextJS Project</h1>
     </>
   );
 }
