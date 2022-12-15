@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -6,7 +7,7 @@ const Header = () => {
   return (
     <>
       <div className="flex items-center justify-between flex-wrap p-6">
-        <h1 className="font-bold text-xl">NextJS Project</h1>
+        <h1 className="font-bold text-xl"><Link href="/">NextJS Project</Link></h1>
         <button
           id="theme-toggle"
           type="button"

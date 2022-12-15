@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Book = (props) => {
     // console.log(props);
     return (
@@ -18,6 +20,7 @@ const Book = (props) => {
               <span className="mb-3 font-normal text-gray-700 dark:text-gray-400"><span className="font-bold">Genre:</span> {props.props.genre}</span>
               <span className="mb-3 font-normal text-gray-700 dark:text-gray-400">{props.props.places}</span>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{props.props.overview}</p>
+              <Link href={`book/` + props.props.title}>Go to book detail</Link>
             </div>
         </div>
       </>
