@@ -5,8 +5,8 @@ const Header = () => {
 
   return (
     <>
-      <div>
-        <h1>NextJS Project</h1>
+      <div className="flex items-center justify-between flex-wrap p-6">
+        <h1 className="font-bold text-xl">NextJS Project</h1>
         <button
           id="theme-toggle"
           type="button"
